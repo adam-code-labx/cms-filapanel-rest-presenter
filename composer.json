@@ -9,7 +9,7 @@
         "filament/filament": "^3.2",
         "laravel/framework": "^11.0",
         "laravel/tinker": "^2.9",
-        "xtend-packages/rest-presenter": "^0.11.0"
+        "xtend-packages/rest-presenter": "^1.0.0-rc.2"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",
