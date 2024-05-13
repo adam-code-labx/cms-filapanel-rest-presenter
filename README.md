@@ -52,10 +52,22 @@ php artisan filament:upgrade
 php artisan migrate:fresh
 ```
 
+### Create SQLite Database
+
+```
+touch database/database.sqlite
+```
+
 ### Link storage
 
 ```
 php artisan storage:link
+```
+
+### Install Package Dependencies
+
+```
+pnpm install && pnpm dev
 ```
 
 ### All as one command
@@ -63,8 +75,10 @@ php artisan storage:link
 ```
 composer install && 
 cp .env.example .env &&
+touch database/database.sqlite &&
 php artisan key:generate && 
 php artisan filament:upgrade &&
 php artisan migrate:fresh &&
-php artisan storage:link
+php artisan storage:link &&
+pnpm install && pnpm dev
 ```
