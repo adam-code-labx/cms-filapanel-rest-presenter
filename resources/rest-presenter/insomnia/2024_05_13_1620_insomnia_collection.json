@@ -1,0 +1,451 @@
+{
+    "_type": "export",
+    "__export_format": 4,
+    "__export_date": "2024-05-13T16:20:59+00:00",
+    "__export_source": "rest-presenter.insomnia",
+    "resources": [
+        {
+            "_id": "wrk_66423debcc6b2",
+            "parentId": null,
+            "modified": "2024-05-13T16:20:59+00:00",
+            "created": "2024-05-13T16:20:59+00:00",
+            "name": "CMS Filapanel API Project (RESTPresenter)",
+            "description": "CMS Filapanel API Project RESTPresenter Workspace",
+            "scope": "collection",
+            "_type": "workspace"
+        },
+        {
+            "_id": "fld_66423debcc8c7",
+            "parentId": "wrk_66423debcc6b2",
+            "modified": "2024-05-13T16:20:59+00:00",
+            "created": "2024-05-13T16:20:59+00:00",
+            "url": "{{ _.base_url }}\/api\/v1\/resources",
+            "name": "Resources",
+            "description": "",
+            "method": "GET",
+            "body": {
+                "mimeType": "application\/json",
+                "text": "{\n    \"key\": \"value\"\n}"
+            },
+            "parameters": [],
+            "authentication": [],
+            "metaSortKey": -1,
+            "_type": "request"
+        },
+        {
+            "_id": "fld_66423debcc951",
+            "parentId": "wrk_66423debcc6b2",
+            "modified": "2024-05-13T16:20:59+00:00",
+            "created": "2024-05-13T16:20:59+00:00",
+            "name": "Users",
+            "description": "",
+            "environment": [],
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1,
+            "_type": "request_group"
+        },
+        {
+            "_id": "req_66423debcc967",
+            "parentId": "fld_66423debcc951",
+            "modified": "2024-05-13T16:20:59+00:00",
+            "created": "2024-05-13T16:20:59+00:00",
+            "url": "{{ _.base_url }}\/api\/v1\/users",
+            "name": "api\/v1\/users",
+            "description": "",
+            "method": "GET",
+            "body": {
+                "mimeType": "application\/json",
+                "text": "{\n    \"key\": \"value\"\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application\/json"
+                },
+                {
+                    "name": "X-REST-PRESENTER-API-KEY",
+                    "value": "rest-presenter-secret-key",
+                    "disabled": false
+                },
+                {
+                    "name": "X-REST-PRESENTER",
+                    "value": "user",
+                    "disabled": true
+                }
+            ],
+            "authentication": [],
+            "metaSortKey": -1,
+            "_type": "request"
+        },
+        {
+            "_id": "req_66423debcc9b6",
+            "parentId": "fld_66423debcc951",
+            "modified": "2024-05-13T16:20:59+00:00",
+            "created": "2024-05-13T16:20:59+00:00",
+            "url": "{{ _.base_url }}\/api\/v1\/users\/:user",
+            "name": "api\/v1\/users\/:user",
+            "description": "",
+            "method": "GET",
+            "body": {
+                "mimeType": "application\/json",
+                "text": "{\n    \"key\": \"value\"\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application\/json"
+                },
+                {
+                    "name": "X-REST-PRESENTER-API-KEY",
+                    "value": "rest-presenter-secret-key",
+                    "disabled": false
+                },
+                {
+                    "name": "X-REST-PRESENTER",
+                    "value": "user",
+                    "disabled": true
+                }
+            ],
+            "authentication": [],
+            "metaSortKey": -1,
+            "_type": "request"
+        },
+        {
+            "_id": "fld_66423debcc9e4",
+            "parentId": "wrk_66423debcc6b2",
+            "modified": "2024-05-13T16:20:59+00:00",
+            "created": "2024-05-13T16:20:59+00:00",
+            "name": "Categories",
+            "description": "",
+            "environment": [],
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1,
+            "_type": "request_group"
+        },
+        {
+            "_id": "req_66423debcc9f3",
+            "parentId": "fld_66423debcc9e4",
+            "modified": "2024-05-13T16:20:59+00:00",
+            "created": "2024-05-13T16:20:59+00:00",
+            "url": "{{ _.base_url }}\/api\/v1\/filament\/categories",
+            "name": "api\/v1\/filament\/categories",
+            "description": "",
+            "method": "GET",
+            "body": {
+                "mimeType": "application\/json",
+                "text": "{\n    \"key\": \"value\"\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application\/json"
+                },
+                {
+                    "name": "X-REST-PRESENTER-API-KEY",
+                    "value": "rest-presenter-secret-key",
+                    "disabled": false
+                },
+                {
+                    "name": "X-REST-PRESENTER",
+                    "value": "category",
+                    "disabled": true
+                }
+            ],
+            "authentication": [],
+            "metaSortKey": -1,
+            "_type": "request"
+        },
+        {
+            "_id": "req_66423debcca33",
+            "parentId": "fld_66423debcc9e4",
+            "modified": "2024-05-13T16:20:59+00:00",
+            "created": "2024-05-13T16:20:59+00:00",
+            "url": "{{ _.base_url }}\/api\/v1\/filament\/categories\/:category",
+            "name": "api\/v1\/filament\/categories\/:category",
+            "description": "",
+            "method": "GET",
+            "body": {
+                "mimeType": "application\/json",
+                "text": "{\n    \"key\": \"value\"\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application\/json"
+                },
+                {
+                    "name": "X-REST-PRESENTER-API-KEY",
+                    "value": "rest-presenter-secret-key",
+                    "disabled": false
+                },
+                {
+                    "name": "X-REST-PRESENTER",
+                    "value": "category",
+                    "disabled": true
+                }
+            ],
+            "authentication": [],
+            "metaSortKey": -1,
+            "_type": "request"
+        },
+        {
+            "_id": "fld_66423debcca5e",
+            "parentId": "wrk_66423debcc6b2",
+            "modified": "2024-05-13T16:20:59+00:00",
+            "created": "2024-05-13T16:20:59+00:00",
+            "name": "Comments",
+            "description": "",
+            "environment": [],
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1,
+            "_type": "request_group"
+        },
+        {
+            "_id": "req_66423debcca6f",
+            "parentId": "fld_66423debcca5e",
+            "modified": "2024-05-13T16:20:59+00:00",
+            "created": "2024-05-13T16:20:59+00:00",
+            "url": "{{ _.base_url }}\/api\/v1\/filament\/comments",
+            "name": "api\/v1\/filament\/comments",
+            "description": "",
+            "method": "GET",
+            "body": {
+                "mimeType": "application\/json",
+                "text": "{\n    \"key\": \"value\"\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application\/json"
+                },
+                {
+                    "name": "X-REST-PRESENTER-API-KEY",
+                    "value": "rest-presenter-secret-key",
+                    "disabled": false
+                },
+                {
+                    "name": "X-REST-PRESENTER",
+                    "value": "comment",
+                    "disabled": true
+                }
+            ],
+            "authentication": [],
+            "metaSortKey": -1,
+            "_type": "request"
+        },
+        {
+            "_id": "req_66423debccaae",
+            "parentId": "fld_66423debcca5e",
+            "modified": "2024-05-13T16:20:59+00:00",
+            "created": "2024-05-13T16:20:59+00:00",
+            "url": "{{ _.base_url }}\/api\/v1\/filament\/comments\/:comment",
+            "name": "api\/v1\/filament\/comments\/:comment",
+            "description": "",
+            "method": "GET",
+            "body": {
+                "mimeType": "application\/json",
+                "text": "{\n    \"key\": \"value\"\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application\/json"
+                },
+                {
+                    "name": "X-REST-PRESENTER-API-KEY",
+                    "value": "rest-presenter-secret-key",
+                    "disabled": false
+                },
+                {
+                    "name": "X-REST-PRESENTER",
+                    "value": "comment",
+                    "disabled": true
+                }
+            ],
+            "authentication": [],
+            "metaSortKey": -1,
+            "_type": "request"
+        },
+        {
+            "_id": "fld_66423debccada",
+            "parentId": "wrk_66423debcc6b2",
+            "modified": "2024-05-13T16:20:59+00:00",
+            "created": "2024-05-13T16:20:59+00:00",
+            "name": "Pages",
+            "description": "",
+            "environment": [],
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1,
+            "_type": "request_group"
+        },
+        {
+            "_id": "req_66423debccaed",
+            "parentId": "fld_66423debccada",
+            "modified": "2024-05-13T16:20:59+00:00",
+            "created": "2024-05-13T16:20:59+00:00",
+            "url": "{{ _.base_url }}\/api\/v1\/filament\/pages",
+            "name": "api\/v1\/filament\/pages",
+            "description": "",
+            "method": "GET",
+            "body": {
+                "mimeType": "application\/json",
+                "text": "{\n    \"key\": \"value\"\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application\/json"
+                },
+                {
+                    "name": "X-REST-PRESENTER-API-KEY",
+                    "value": "rest-presenter-secret-key",
+                    "disabled": false
+                },
+                {
+                    "name": "X-REST-PRESENTER",
+                    "value": "page",
+                    "disabled": true
+                }
+            ],
+            "authentication": [],
+            "metaSortKey": -1,
+            "_type": "request"
+        },
+        {
+            "_id": "req_66423debccb2d",
+            "parentId": "fld_66423debccada",
+            "modified": "2024-05-13T16:20:59+00:00",
+            "created": "2024-05-13T16:20:59+00:00",
+            "url": "{{ _.base_url }}\/api\/v1\/filament\/pages\/:page",
+            "name": "api\/v1\/filament\/pages\/:page",
+            "description": "",
+            "method": "GET",
+            "body": {
+                "mimeType": "application\/json",
+                "text": "{\n    \"key\": \"value\"\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application\/json"
+                },
+                {
+                    "name": "X-REST-PRESENTER-API-KEY",
+                    "value": "rest-presenter-secret-key",
+                    "disabled": false
+                },
+                {
+                    "name": "X-REST-PRESENTER",
+                    "value": "page",
+                    "disabled": true
+                }
+            ],
+            "authentication": [],
+            "metaSortKey": -1,
+            "_type": "request"
+        },
+        {
+            "_id": "fld_66423debccb5f",
+            "parentId": "wrk_66423debcc6b2",
+            "modified": "2024-05-13T16:20:59+00:00",
+            "created": "2024-05-13T16:20:59+00:00",
+            "name": "Posts",
+            "description": "",
+            "environment": [],
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1,
+            "_type": "request_group"
+        },
+        {
+            "_id": "req_66423debccb73",
+            "parentId": "fld_66423debccb5f",
+            "modified": "2024-05-13T16:20:59+00:00",
+            "created": "2024-05-13T16:20:59+00:00",
+            "url": "{{ _.base_url }}\/api\/v1\/filament\/posts",
+            "name": "api\/v1\/filament\/posts",
+            "description": "",
+            "method": "GET",
+            "body": {
+                "mimeType": "application\/json",
+                "text": "{\n    \"key\": \"value\"\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application\/json"
+                },
+                {
+                    "name": "X-REST-PRESENTER-API-KEY",
+                    "value": "rest-presenter-secret-key",
+                    "disabled": false
+                },
+                {
+                    "name": "X-REST-PRESENTER",
+                    "value": "post",
+                    "disabled": true
+                }
+            ],
+            "authentication": [],
+            "metaSortKey": -1,
+            "_type": "request"
+        },
+        {
+            "_id": "req_66423debccbbc",
+            "parentId": "fld_66423debccb5f",
+            "modified": "2024-05-13T16:20:59+00:00",
+            "created": "2024-05-13T16:20:59+00:00",
+            "url": "{{ _.base_url }}\/api\/v1\/filament\/posts\/:post",
+            "name": "api\/v1\/filament\/posts\/:post",
+            "description": "",
+            "method": "GET",
+            "body": {
+                "mimeType": "application\/json",
+                "text": "{\n    \"key\": \"value\"\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application\/json"
+                },
+                {
+                    "name": "X-REST-PRESENTER-API-KEY",
+                    "value": "rest-presenter-secret-key",
+                    "disabled": false
+                },
+                {
+                    "name": "X-REST-PRESENTER",
+                    "value": "post",
+                    "disabled": true
+                }
+            ],
+            "authentication": [],
+            "metaSortKey": -1,
+            "_type": "request"
+        },
+        {
+            "_id": "env_66423debccc3f",
+            "parentId": "wrk_66423debcc6b2",
+            "modified": "2024-05-13T16:20:59+00:00",
+            "created": "2024-05-13T16:20:59+00:00",
+            "name": "CMS Filapanel API Project (RESTPresenter)",
+            "data": {
+                "base_url": "http:\/\/cms-filapanel-rest-presenter.test",
+                "version": "v1"
+            },
+            "color": null,
+            "isPrivate": false,
+            "metaSortKey": -1,
+            "_type": "environment"
+        }
+    ]
+}

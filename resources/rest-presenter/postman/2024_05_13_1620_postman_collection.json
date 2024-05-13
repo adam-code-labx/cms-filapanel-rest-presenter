@@ -1,0 +1,454 @@
+{
+    "info": {
+        "name": "CMS Filapanel API Project (RESTPresenter)",
+        "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.1.0\/collection.json"
+    },
+    "variable": [
+        {
+            "key": "base_url",
+            "value": "http:\/\/cms-filapanel-rest-presenter.test"
+        }
+    ],
+    "item": [
+        {
+            "name": "Resources",
+            "request": {
+                "method": "GET",
+                "header": [
+                    {
+                        "type": "text",
+                        "key": "Accept",
+                        "value": "application\/json"
+                    },
+                    {
+                        "type": "text",
+                        "key": "X-REST-PRESENTER-API-KEY",
+                        "value": "rest-presenter-secret-key",
+                        "disabled": false
+                    }
+                ],
+                "url": {
+                    "raw": "{{base_url}}\/api\/v1\/resources",
+                    "host": [
+                        "{{base_url}}"
+                    ],
+                    "path": [
+                        "api",
+                        "v1",
+                        "resources"
+                    ],
+                    "variable": []
+                }
+            }
+        },
+        {
+            "name": "Users",
+            "item": [
+                {
+                    "name": "api\/v1\/users",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "type": "text",
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "type": "text",
+                                "key": "X-REST-PRESENTER-API-KEY",
+                                "value": "rest-presenter-secret-key",
+                                "disabled": false
+                            },
+                            {
+                                "type": "text",
+                                "key": "X-REST-PRESENTER",
+                                "value": "user",
+                                "disabled": true
+                            }
+                        ],
+                        "url": {
+                            "raw": "{{base_url}}\/api\/v1\/users",
+                            "host": [
+                                "{{base_url}}"
+                            ],
+                            "path": [
+                                "api",
+                                "v1",
+                                "users"
+                            ],
+                            "variable": []
+                        }
+                    }
+                },
+                {
+                    "name": "api\/v1\/users\/:user",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "type": "text",
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "type": "text",
+                                "key": "X-REST-PRESENTER-API-KEY",
+                                "value": "rest-presenter-secret-key",
+                                "disabled": false
+                            },
+                            {
+                                "type": "text",
+                                "key": "X-REST-PRESENTER",
+                                "value": "user",
+                                "disabled": true
+                            }
+                        ],
+                        "url": {
+                            "raw": "{{base_url}}\/api\/v1\/users\/:user",
+                            "host": [
+                                "{{base_url}}"
+                            ],
+                            "path": [
+                                "api",
+                                "v1",
+                                "users",
+                                ":user"
+                            ],
+                            "variable": []
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Categories",
+            "item": [
+                {
+                    "name": "api\/v1\/filament\/categories",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "type": "text",
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "type": "text",
+                                "key": "X-REST-PRESENTER-API-KEY",
+                                "value": "rest-presenter-secret-key",
+                                "disabled": false
+                            },
+                            {
+                                "type": "text",
+                                "key": "X-REST-PRESENTER",
+                                "value": "category",
+                                "disabled": true
+                            }
+                        ],
+                        "url": {
+                            "raw": "{{base_url}}\/api\/v1\/filament\/categories",
+                            "host": [
+                                "{{base_url}}"
+                            ],
+                            "path": [
+                                "api",
+                                "v1",
+                                "filament",
+                                "categories"
+                            ],
+                            "variable": []
+                        }
+                    }
+                },
+                {
+                    "name": "api\/v1\/filament\/categories\/:category",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "type": "text",
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "type": "text",
+                                "key": "X-REST-PRESENTER-API-KEY",
+                                "value": "rest-presenter-secret-key",
+                                "disabled": false
+                            },
+                            {
+                                "type": "text",
+                                "key": "X-REST-PRESENTER",
+                                "value": "category",
+                                "disabled": true
+                            }
+                        ],
+                        "url": {
+                            "raw": "{{base_url}}\/api\/v1\/filament\/categories\/:category",
+                            "host": [
+                                "{{base_url}}"
+                            ],
+                            "path": [
+                                "api",
+                                "v1",
+                                "filament",
+                                "categories",
+                                ":category"
+                            ],
+                            "variable": []
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Comments",
+            "item": [
+                {
+                    "name": "api\/v1\/filament\/comments",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "type": "text",
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "type": "text",
+                                "key": "X-REST-PRESENTER-API-KEY",
+                                "value": "rest-presenter-secret-key",
+                                "disabled": false
+                            },
+                            {
+                                "type": "text",
+                                "key": "X-REST-PRESENTER",
+                                "value": "comment",
+                                "disabled": true
+                            }
+                        ],
+                        "url": {
+                            "raw": "{{base_url}}\/api\/v1\/filament\/comments",
+                            "host": [
+                                "{{base_url}}"
+                            ],
+                            "path": [
+                                "api",
+                                "v1",
+                                "filament",
+                                "comments"
+                            ],
+                            "variable": []
+                        }
+                    }
+                },
+                {
+                    "name": "api\/v1\/filament\/comments\/:comment",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "type": "text",
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "type": "text",
+                                "key": "X-REST-PRESENTER-API-KEY",
+                                "value": "rest-presenter-secret-key",
+                                "disabled": false
+                            },
+                            {
+                                "type": "text",
+                                "key": "X-REST-PRESENTER",
+                                "value": "comment",
+                                "disabled": true
+                            }
+                        ],
+                        "url": {
+                            "raw": "{{base_url}}\/api\/v1\/filament\/comments\/:comment",
+                            "host": [
+                                "{{base_url}}"
+                            ],
+                            "path": [
+                                "api",
+                                "v1",
+                                "filament",
+                                "comments",
+                                ":comment"
+                            ],
+                            "variable": []
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Pages",
+            "item": [
+                {
+                    "name": "api\/v1\/filament\/pages",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "type": "text",
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "type": "text",
+                                "key": "X-REST-PRESENTER-API-KEY",
+                                "value": "rest-presenter-secret-key",
+                                "disabled": false
+                            },
+                            {
+                                "type": "text",
+                                "key": "X-REST-PRESENTER",
+                                "value": "page",
+                                "disabled": true
+                            }
+                        ],
+                        "url": {
+                            "raw": "{{base_url}}\/api\/v1\/filament\/pages",
+                            "host": [
+                                "{{base_url}}"
+                            ],
+                            "path": [
+                                "api",
+                                "v1",
+                                "filament",
+                                "pages"
+                            ],
+                            "variable": []
+                        }
+                    }
+                },
+                {
+                    "name": "api\/v1\/filament\/pages\/:page",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "type": "text",
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "type": "text",
+                                "key": "X-REST-PRESENTER-API-KEY",
+                                "value": "rest-presenter-secret-key",
+                                "disabled": false
+                            },
+                            {
+                                "type": "text",
+                                "key": "X-REST-PRESENTER",
+                                "value": "page",
+                                "disabled": true
+                            }
+                        ],
+                        "url": {
+                            "raw": "{{base_url}}\/api\/v1\/filament\/pages\/:page",
+                            "host": [
+                                "{{base_url}}"
+                            ],
+                            "path": [
+                                "api",
+                                "v1",
+                                "filament",
+                                "pages",
+                                ":page"
+                            ],
+                            "variable": []
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Posts",
+            "item": [
+                {
+                    "name": "api\/v1\/filament\/posts",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "type": "text",
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "type": "text",
+                                "key": "X-REST-PRESENTER-API-KEY",
+                                "value": "rest-presenter-secret-key",
+                                "disabled": false
+                            },
+                            {
+                                "type": "text",
+                                "key": "X-REST-PRESENTER",
+                                "value": "post",
+                                "disabled": true
+                            }
+                        ],
+                        "url": {
+                            "raw": "{{base_url}}\/api\/v1\/filament\/posts",
+                            "host": [
+                                "{{base_url}}"
+                            ],
+                            "path": [
+                                "api",
+                                "v1",
+                                "filament",
+                                "posts"
+                            ],
+                            "variable": []
+                        }
+                    }
+                },
+                {
+                    "name": "api\/v1\/filament\/posts\/:post",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "type": "text",
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "type": "text",
+                                "key": "X-REST-PRESENTER-API-KEY",
+                                "value": "rest-presenter-secret-key",
+                                "disabled": false
+                            },
+                            {
+                                "type": "text",
+                                "key": "X-REST-PRESENTER",
+                                "value": "post",
+                                "disabled": true
+                            }
+                        ],
+                        "url": {
+                            "raw": "{{base_url}}\/api\/v1\/filament\/posts\/:post",
+                            "host": [
+                                "{{base_url}}"
+                            ],
+                            "path": [
+                                "api",
+                                "v1",
+                                "filament",
+                                "posts",
+                                ":post"
+                            ],
+                            "variable": []
+                        }
+                    }
+                }
+            ]
+        }
+    ],
+    "event": []
+}
