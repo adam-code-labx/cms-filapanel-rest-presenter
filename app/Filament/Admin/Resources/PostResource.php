@@ -23,7 +23,7 @@ class PostResource extends Resource
                 Forms\Components\TextInput::make('slug')->required(),
                 Forms\Components\TextInput::make('title')->required(),
                 Forms\Components\Textarea::make('content')->required(),
-                Forms\Components\Select::make('category_id')->nullable()->required()->relationship('category', 'name'),
+                Forms\Components\Select::make('category_id')->nullable()->required()->relationship('category', 'title'),
                 Forms\Components\Select::make('author_id')->nullable()->required()->relationship('author', 'name'),
             ]);
     }

@@ -22,7 +22,7 @@ class CommentResource extends Resource
             ->schema([
                 Forms\Components\Textarea::make('content')->required(),
                 Forms\Components\Select::make('user_id')->nullable()->required()->relationship('user', 'name'),
-                Forms\Components\Select::make('post_id')->nullable()->required()->relationship('post', 'name'),
+                Forms\Components\Select::make('post_id')->nullable()->required()->relationship('post', 'title'),
             ]);
     }
 
@@ -30,7 +30,7 @@ class CommentResource extends Resource
     {
         return $table
             ->columns([
-
+                Tables\Columns\TextColumn::make('content')->searchable(),
             ])
             ->filters([
 
